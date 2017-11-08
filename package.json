@@ -1,0 +1,22 @@
+{
+  "name": "location-grabber",
+  "version": "1.0.0",
+  "description": "get location from ip and save to txt file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielshad/location-grabber.git"
+  },
+  "author": "arielshad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielshad/location-grabber/issues"
+  },
+  "homepage": "https://github.com/arielshad/location-grabber#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
