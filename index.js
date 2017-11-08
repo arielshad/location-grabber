@@ -2,9 +2,16 @@ const express = require('express')
 const app = express()
 const iplocation = require('iplocation')
 const fs = require('fs');
+const path = require('path')
+const serveIndex = require('serve-index')
 
 
 app.enable('trust proxy')
+
+// app.use(express.directory(path.join(__dirname, 'locations')));
+// app.use('/static', express.static(path.join(__dirname, 'locations')))
+
+app.use('/ftp', express.static('./locations'), serveIndex('./locations', {'icons': true}))
 
 
 const ipMiddleware = function(req, res, next) {
