@@ -1,4 +1,4 @@
-./locations/*
+./locations/*.json
 # Logs
 logs
 *.log
