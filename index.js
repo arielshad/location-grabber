@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 	
 	iplocation(req.ip).then(result=>{
 		fs.writeFileSync(`./locations/${+new Date}.json`, JSON.stringify(result,null, 3));
-		return res.send(result);
+		return res.sendStatus(200);
 	})
 	
 })
