@@ -12,7 +12,7 @@ const ipMiddleware = function(req, res, next) {
 app.get('/', (req, res) => {
 	return iplocation(req.clientIp, function (error, res) {
 		return res.country;
-	}
+	});
 	
 	
 })
