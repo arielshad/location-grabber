@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/arielshad/location-grabber#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "iplocation": "^5.0.0",
+    "request-ip": "^2.0.2"
   }
 }
